@@ -1,0 +1,53 @@
+{
+	"name": "nvoos-astro-velocity",
+	"version": "0.1.0",
+	"description": "NV-authored headless storefront (Astro 7 SSR) for the NV commerce contract — Proposal 092.",
+	"type": "module",
+	"main": "server.js",
+	"license": "MIT",
+	"private": false,
+	"engines": {
+		"node": ">=20.3.0"
+	},
+	"scripts": {
+		"start": "node server.js",
+		"serve": "node scripts/serve.mjs",
+		"build": "echo \"(prebuilt dist — no build on Velocity)\"",
+		"test": "echo \"(tests run in the monorepo CI)\"",
+		"lint": "echo \"(lint runs in the monorepo CI)\"",
+		"check": "echo \"(check runs in the monorepo CI)\"",
+		"dev": "echo \"(dev only in the monorepo)\""
+	},
+	"dependencies": {
+		"@astrojs/node": "^11.1.9",
+		"@astrojs/react": "^7.1.2",
+		"@modelcontextprotocol/node": "^2.0.0",
+		"@modelcontextprotocol/server": "^2.0.0",
+		"@nanostores/react": "^2.0.1",
+		"astro": "^7.4.4",
+		"nanostores": "^1.5.5",
+		"react": "^19.3.1",
+		"react-dom": "^19.3.1",
+		"sanitize-html": "^2.18.1",
+		"zod": "^4.0.0"
+	},
+	"devDependencies": {
+		"@astrojs/check": "^0.9.12",
+		"@eslint/js": "^10.0.1",
+		"@lhci/cli": "^0.15.1",
+		"@playwright/test": "^1.64.1",
+		"@types/node": "^26.6.6",
+		"@types/react": "^19.3.0",
+		"@types/react-dom": "^19.3.0",
+		"@types/sanitize-html": "^2.16.2",
+		"esbuild": "^0.28.2",
+		"eslint": "^10.13.0",
+		"eslint-plugin-astro": "^3.2.1",
+		"typescript": "^6.0.3",
+		"typescript-eslint": "^8.72.1",
+		"vitest": "^5.0.5"
+	},
+	"overrides": {
+		"tmp": ">=0.2.4"
+	}
+}
