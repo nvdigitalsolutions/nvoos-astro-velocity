@@ -1,0 +1,1 @@
+function e(){return`USD`}var t=null;function n(){return t||=new Intl.NumberFormat(`en-US`,{style:`currency`,currency:e()}),t}function r(e){return n().format(e)}export{e as n,r as t};
