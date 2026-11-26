@@ -1,0 +1,1 @@
+document.addEventListener(`astro:page-load`,()=>{window.dispatchEvent(new CustomEvent(`nvoos:page-load`))});

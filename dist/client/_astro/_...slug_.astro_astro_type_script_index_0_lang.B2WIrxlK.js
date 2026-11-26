@@ -1,0 +1,1 @@
+document.addEventListener(`change`,e=>{let t=e.target;t?.closest(`[data-auto-submit]`)&&t.closest(`form`)?.submit()});
